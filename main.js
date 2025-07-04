@@ -62,3 +62,18 @@ function geraSenha() {
     }
     campoSenha.value = senha;
 }
+    classificaSenha(alfabeto.length);
+
+    function classificaSenha(tamanhoAlfabeto){
+        let entropia = entropia * Math.log2(alfabeto.length);
+        console.log(entropia);
+forcaSenha.classList.remove('fraca','media','forte');
+if (entropia> 11){
+forcaSenha.classList.add('forte');
+}
+else {
+forcaSenha.classList.add('media');
+}
+if (entropia > 5 && entropia < 12 )
+else if (entropia <= 5){
+}
